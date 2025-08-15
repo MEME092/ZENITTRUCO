@@ -3,7 +3,6 @@
 <html lang="es">
 <head>
         <meta name="google-site-verification" content="PJkYcvdsK0eXRsg1Ic9HN94oPFF95r0kj7wj8GgykP4" />
-<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1104389206292425"></script>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="ZenitTruco - Trucos y guías de Roblox" name="description"/>
@@ -340,19 +339,41 @@
 <footer>
 <p>© 2025 ZenitTruco - Todos los derechos reservados</p>
 </footer>
+
 <!-- Banner de cookies -->
 <div id="cookie-banner">
-<span>Usamos cookies para mejorar tu experiencia. Al continuar navegando aceptas nuestra política de cookies.</span>
-<button onclick="aceptarCookies()">Aceptar</button>
+  <span>
+    Usamos cookies para mejorar tu experiencia y mostrar anuncios personalizados. 
+    Al continuar navegando aceptas nuestra 
+    <a href="#privacidad" style="color:#4CAF50; text-decoration:underline;">política de cookies</a>.
+  </span>
+  <button onclick="aceptarCookies()">Aceptar</button>
 </div>
+
 <script>
 function aceptarCookies() {
     document.getElementById('cookie-banner').style.display = 'none';
-    localStorage.setItem('cookiesAceptadas', 'true');
+    localStorage.setItem('cookiesAceptadas_v2', 'true');
+
+    // Cargar AdSense después del consentimiento
+    var adsScript = document.createElement('script');
+    adsScript.async = true;
+    adsScript.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1104389206292425";
+    adsScript.crossOrigin = "anonymous";
+    document.head.appendChild(adsScript);
 }
-if (localStorage.getItem('cookiesAceptadas')) {
+
+if (localStorage.getItem('cookiesAceptadas_v2')) {
     document.getElementById('cookie-banner').style.display = 'none';
+
+    // Cargar AdSense directamente si ya se aceptó antes
+    var adsScript = document.createElement('script');
+    adsScript.async = true;
+    adsScript.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1104389206292425";
+    adsScript.crossOrigin = "anonymous";
+    document.head.appendChild(adsScript);
 }
 </script>
+
 </body>
 </html>
