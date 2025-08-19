@@ -1,0 +1,8 @@
+# Archivo robots.txt para https://zenittruco.lat/
+# Permite el acceso completo a todos los buscadores
+# e informa la ubicación del sitemap
+
+User-agent: *
+Allow: /
+
+Sitemap: https://zenittruco.lat/sitemap.xml
